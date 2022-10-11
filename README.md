@@ -1,28 +1,25 @@
-# Indian-State-Census-Analyser-Problem
+# &Cab-Invoice-Generator
 
 
-Start with Displaying Welcome to Message
 
+Start with Displaying Welcome  Message
 
 
 
 
 
 
-UseCase1- Ability for the analyser
-to load the Indian States Census Information from a csv file
-- Create a StateCensusAnalyser Class to load
-the State Census CSV Data
-- Create CSVStateCensus Class to load the
-CSV Data
-- Use Iterator to load the data - Check with StateCensusAnalyser to ensure
 
+UseCase1- Given Distance and time the invoice generator should return the total fare
+of the journey.
 
 
 
 
 
 
+UseCase2-The Invoice generator should now take multiple rides,and 
+calculate the aggregate total of all.
 
 
 
@@ -35,13 +32,13 @@ CSV Data
 
 
 
+UseCase 3- The Invoice generator should now return the following as a part of
+Invoice-
+-Total number of rides
+-Total Fare
+-Average fare per ride
 
 
-Test Case1.1-Given the States
-Census CSV file, Check to ensure the Number
-of Record matches
-This is a Happy Test Case where the records
-are checked.
 
 
 
@@ -54,18 +51,14 @@ are checked.
 
 
 
-TestCase 1.2-Given the State Census
-CSV File if incorrect
-Returns a custom
-Exception
 
-This is a Sad Test Case to verify if the
-exception is raised.
 
 
 
 
 
+Usecase 4-Given a user id,The invoice service get the list of rides from the ride repository
+and returns the invoice.
 
 
 
@@ -78,98 +71,9 @@ exception is raised.
 
 
 
+UseCase 5-Premium  Rides
+The cab agency now supported the two type of rides
 
+Normal Ride- 10Rs.per km ,Rs.1 per minute,Minmum fare 5Rs.
 
-
-
-TestCase 1.3-Given the State Census
-CSV File when correct
-but type incorrect
-Returns a custom
-Exception
-
-This is a Sad Test Case to verify if the type is
-incorrect then exception is raised.
-
-
-
-
-
-
-
-
-
-
-
-
-TestCase 1.4-Given the State Census
-CSV File when correct
-but delimiter incorrect
-Returns a custom
-Exception
-
-This is a Sad Test Case to verify if the file
-delimiter is incorrect then exception is raised. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-TestCase 1.5-Given the State Census
-CSV File when correct
-but csv header
-incorrect Returns a
-custom Exception
-
-This is a Sad Test Case to verify if the header is
-incorrect then exception is raised.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Usecase 2- Ability for the analyser
-to load the Indian
-States Code Information from a csv
-file - Create CSVStates Class to load the CSV Data - Use Iterator to load the data - Check with StateCensusAnalyser to ensure
-number of record matches
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-TestCase- Like UC 1 repeat all
-the 5 TC for UC 2
-
-Repeat all the Happy and Sad Test Cases
+Premium Ride- 15Rs.perkm,Rs.2 per minute,Minimum fare 20Rs.
