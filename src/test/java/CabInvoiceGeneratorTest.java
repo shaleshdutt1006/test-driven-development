@@ -14,5 +14,20 @@ public class CabInvoiceGeneratorTest {
         Assertions.assertEquals(25, fare);
     }
 
+    @Test
+    public void givenMultipleRides_ShouldReturnTotalFare() {
+        CabInvoiceGenerator cabInvoiceGenerator = new CabInvoiceGenerator();
+        /*
+        Make an array of Ride where we are adding multiple rides and giving distance and time to it
+        using constructor in Ride class
+         */
+        Ride[] rides = {new Ride(2, 5), new Ride(3, 5)};
+       /*
+        calculating the fare using calculateFare method in cabInvoiceGenerator Class and giving
+        calculateFare method array of rides
+        */
+        double fare = cabInvoiceGenerator.calculateFare(rides);
+        Assertions.assertEquals(60, fare);
 
+    }
 }

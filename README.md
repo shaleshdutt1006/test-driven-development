@@ -1,4 +1,4 @@
-# &Cab-Invoice-Generator
+# Cab-Invoice-Generator
 
 
 
@@ -71,9 +71,9 @@ and returns the invoice.
 
 
 
-UseCase 5-Premium  Rides
+UseCase 5-
 The cab agency now supported the two type of rides
 
-Normal Ride- 10Rs.per km ,Rs.1 per minute,Minmum fare 5Rs.
+-Normal Ride- 10Rs.per km ,Rs.1 per minute,Minmum fare 5Rs.
 
-Premium Ride- 15Rs.perkm,Rs.2 per minute,Minimum fare 20Rs.
+-Premium Ride- 15Rs.perkm,Rs.2 per minute,Minimum fare 20Rs.
