@@ -30,4 +30,13 @@ public class CabInvoiceGeneratorTest {
         Assertions.assertEquals(60, fare);
 
     }
+    @Test
+    public void givenMultipleRides_ShouldReturnInvoiceSummary() {
+        CabInvoiceGenerator cabInvoiceGenerator = new CabInvoiceGenerator();
+        Ride[] rides = {new Ride(2, 5), new Ride(3, 5), new Ride(4, 5)};
+        InvoiceSummary invoiceSummary = cabInvoiceGenerator.calculateFareAndReturnInvoiceSummary(rides);
+        InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(3, 105);
+        Assertions.assertEquals(expectedInvoiceSummary, invoiceSummary);
+
+    }
 }
