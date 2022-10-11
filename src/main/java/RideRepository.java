@@ -10,12 +10,12 @@ public class RideRepository {
     Adding Rides in the hashmap where key is the userId and values are various rides arraylist
      */
     public RideRepository() {
-        Ride ride1 = new Ride(2, 5);
-        Ride ride2 = new Ride(3, 5);
-        Ride ride3 = new Ride(4, 5);
-        Ride ride4 = new Ride(5, 5);
-        Ride ride5 = new Ride(6, 5);
-        Ride ride6 = new Ride(7, 5);
+        Ride ride1 = new Ride(2, 5, "Normal");
+        Ride ride2 = new Ride(3, 5, "Normal");
+        Ride ride3 = new Ride(4, 5, "Premium");
+        Ride ride4 = new Ride(5, 5, "Normal");
+        Ride ride5 = new Ride(6, 5, "Normal");
+        Ride ride6 = new Ride(7, 5, "Premium");
         List<Ride> list1 = new ArrayList<>();
         List<Ride> list2 = new ArrayList<>();
         List<Ride> list3 = new ArrayList<>();
