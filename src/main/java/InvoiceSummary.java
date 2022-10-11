@@ -21,5 +21,24 @@ public class InvoiceSummary {
         return Double.compare(that.averageFare, averageFare) == 0;
     }
 
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = numberOfRides;
+        temp = Double.doubleToLongBits(totalFare);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(averageFare);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
 
+    @Override
+    public String toString() {
+        return "InvoiceSummary{" +
+                "numberOfRides=" + numberOfRides +
+                ", totalFare=" + totalFare +
+                ", averageFare=" + averageFare +
+                '}';
+    }
 }
